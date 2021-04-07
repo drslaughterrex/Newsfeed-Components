@@ -87,6 +87,13 @@ const data = [
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
 	},
+  {
+    title: "VGC Pokemon Master",
+    date: 'April 7th, 2021',
+    firstParagraph: 'Trick Room',
+    secondParagraph: 'is super',
+    thirdParagraph: 'OVERPOWERED',
+  }
 ];
 
 /*
