@@ -115,7 +115,7 @@ const data = [
   Refresh the page to see the new article.
 */
 
-const articleSelector = document.querySelector('.articles');
+const articleSelector = document.querySelector(".articles");
 
 function articleMaker({
 	title,
@@ -130,35 +130,34 @@ function articleMaker({
 	const paraOne = document.createElement("p");
 	const paraTwo = document.createElement("p");
 	const paraThree = document.createElement("p");
-  const span = document.createElement('span');
+	const span = document.createElement("span");
 
 	article.appendChild(articleTitle);
 	article.appendChild(articleDate);
 	article.appendChild(paraOne);
 	article.appendChild(paraTwo);
 	article.appendChild(paraThree);
-  article.appendChild(span);
+	article.appendChild(span);
 
 	article.classList.add("article");
 	articleDate.classList.add("date");
-  span.classList.add('expandButton');
+	span.classList.add("expandButton");
 
 	articleTitle.textContent = title;
 	articleDate.textContent = date;
 	paraOne.textContent = firstParagraph;
 	paraTwo.textContent = secondParagraph;
 	paraThree.textContent = thirdParagraph;
-  span.textContent = '+';
+	span.textContent = "+";
 
-  span.addEventListener('click', (e) => {
-    article.classList.toggle('.menu-button')
-  });
+	span.addEventListener("click", (event) => {
+		article.classList.toggle("article-open");
+	});
 
 	return article;
 }
 
 data.forEach((articleDataObj) => {
-  const newArticle = articleMaker(articleDataObj);
-  return articleSelector.append(newArticle);
-
+	const newArticle = articleMaker(articleDataObj);
+	return articleSelector.append(newArticle);
 });
